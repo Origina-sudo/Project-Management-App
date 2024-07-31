@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 const ProjectSideBar = () => {
   return (
@@ -11,7 +12,7 @@ const ProjectSideBar = () => {
               hover:text-stone-100'>+Add Project</button>
         </div>
         <ul>
- 
+        <Button>+Add Projects</Button>
         </ul>
 
     </aside> 
