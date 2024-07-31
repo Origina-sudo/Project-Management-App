@@ -1,5 +1,5 @@
 import React from 'react'
-import Input from './input'
+import Input from './Inputs'
 
 const NewProject = () => {
   return (
@@ -7,9 +7,11 @@ const NewProject = () => {
         <menu>
             <li><button>Cancel</button></li>
             <li><button>Save</button></li>
-        </menu>
+        </menu> 
         <div>
-       
+       <Input label="Title"/>
+       <Input label="Description" textarea/>
+       <Input label="Due Date"/>
         </div>
         
     </div>
