@@ -1,12 +1,12 @@
 import React from 'react'
 
-const input = ({textArea,}) => {
+const Input = ({label,textArea,...props}) => {
   return (
     <p>
     <label></label>
-    {textArea ? <textarea/> : <input/>}
+    {textArea ? <textarea {...props}/> : <input {...props}/>}
     </p>
   )
 }
 
-export default input
+export default Input 
