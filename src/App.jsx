@@ -22,12 +22,14 @@ function handleStartAddProject(){
     let content;
     if (projectstate.selectedProjectId === null){
       content = <NewProject/>
-    }else if (projectstate.selectedProjectId === undefined)
+    }else if (projectstate.selectedProjectId === undefined){
+      content= <NoProjectSelected onStartAddProject={handleStartAddProject}/>
+    }
 
   return (
     <main className="h-screen my-8 flex gap-8">
       <ProjectSideBar onStartAddProject={handleStartAddProject}/>
-      <NoProjectSelected onStartAddProject={handleStartAddProject}/>
+      
     </main> 
   );
 }
