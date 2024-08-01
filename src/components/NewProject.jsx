@@ -1,7 +1,13 @@
 import React from 'react'
 import Input from './Inputs'
+import { useRef } from 'react'
 
 const NewProject = () => {
+
+const title=useRef();
+const Description=useRef();
+const title=useRef();
+
   return (
     <div className='w-[35rem] mt-16'>
         <menu className='flex items-center justify-end gap-4 my-4  '>
@@ -10,7 +16,7 @@ const NewProject = () => {
              hover:bg-stone-950 px-6 py-2 rounded-md'>Save</button></li>
         </menu> 
         <div>
-       <Input label="Title"/>
+       <Input label="Title" />
        <Input label="Description" textarea/>
        <Input label="Due Date"/>
         </div>
