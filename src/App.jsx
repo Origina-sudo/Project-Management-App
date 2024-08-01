@@ -10,7 +10,7 @@ const [projectstate, setProjectstate] = useState({
 })
 
 function handleStartAddProject(){
-      setProjectstate(prevSate => {
+      setProjectstate(prevSate => {  
        return{
         selectedProjectId: null,
         ...prevSate,
@@ -19,10 +19,15 @@ function handleStartAddProject(){
       });
 }
 
+    let content;
+    if (projectstate.selectedProjectId === null){
+      content = <NewProject/>
+    }else if (projectstate.selectedProjectId === undefined)
+
   return (
     <main className="h-screen my-8 flex gap-8">
-      <ProjectSideBar/>
-      <NoProjectSelected/>
+      <ProjectSideBar onStartAddProject={handleStartAddProject}/>
+      <NoProjectSelected onStartAddProject={handleStartAddProject}/>
     </main> 
   );
 }
