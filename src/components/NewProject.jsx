@@ -2,7 +2,7 @@ import React from 'react'
 import Input from './Inputs'
 import { useRef } from 'react'
 
-const NewProject = () => {
+const NewProject = ({onAdd}) => {
 
 const title=useRef();
 const description=useRef();
@@ -14,9 +14,13 @@ function handleSave(event) {
        const enteredDueDate = dueDate.current.value
 
        //Validation.....
+onAdd({
+  title: enteredTitle,
+  description: enteredDescription,
+  dueDate: enteredDueDate
+});
 
 
-       
 }
 
   return (
@@ -30,9 +34,9 @@ function handleSave(event) {
              py-2 rounded-md'>Save</button></li>
         </menu> 
         <div>
-       <Input ref={title} label="Title" />
+       <Input type="text" ref={title} label="Title" />
        <Input ref={description} label="Description" textarea/>
-       <Input  ref={dueDate}label="Due Date"/>
+       <Input  type="date" ref={dueDate}label="Due Date"/>
         </div>
         
     </div>
