@@ -20,6 +20,7 @@ function handleStartAddProject(){
 }
 
     let content;
+
     if (projectstate.selectedProjectId === null){
       content = <NewProject/>
     }else if (projectstate.selectedProjectId === undefined){
@@ -29,6 +30,7 @@ function handleStartAddProject(){
   return (
     <main className="h-screen my-8 flex gap-8">
       <ProjectSideBar onStartAddProject={handleStartAddProject}/>
+      {content}
       
     </main> 
   );
