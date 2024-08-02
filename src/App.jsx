@@ -28,12 +28,12 @@ function handleAddProject(projectData){
 
       return{
         ...prevSate,
+        selectedProjectId:undefined,
         projects: [...prevSate.projects, newProject]
       };
     });
 
 }
-console.log(projectstate);
 
     let content;
 
