@@ -13,7 +13,9 @@ function handleSave(event) {
       const enteredDescription = description.current.value
        const enteredDueDate = dueDate.current.value
 
-       //Validation.....
+       if (enteredTitle.trim() === "" || enteredDescription.trim() === "" || enteredDueDate.trim() === ""){
+
+       }
 onAdd({
   title: enteredTitle,
   description: enteredDescription,
