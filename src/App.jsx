@@ -45,7 +45,9 @@ function handleAddProject(projectData){
 
   return (
     <main className="h-screen my-8 flex gap-8">
-      <ProjectSideBar onStartAddProject={handleStartAddProject}/>
+      <ProjectSideBar 
+      onStartAddProject={handleStartAddProject}
+       projects={projectstate.projects}/>
       {content}
       
     </main> 
