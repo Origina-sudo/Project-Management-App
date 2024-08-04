@@ -16,7 +16,7 @@ function handleSave(event) {
        if (enteredTitle.trim() === "" ||
         enteredDescription.trim() === "" ||
          enteredDueDate.trim() === ""){
-            // Show Erro
+            
        }
 
 onAdd({
