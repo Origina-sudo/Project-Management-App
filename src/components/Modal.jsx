@@ -15,6 +15,9 @@ const Modal = forwardRef(({ children }, ref) => {
   return (
     createPortal(<dialog ref={dialog}>
       {children}
+      <form method='dialog'>
+        <button>Close</button>
+      </form>
     </dialog>,
       document.getElementById('modal-root'))
   )
