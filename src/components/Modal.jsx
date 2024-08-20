@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { forwardRef, useImperativeHandle } from 'react';
 import { createPortal } from 'react-dom';
 
-const Modal = forwardRef(({ children }, ref) => {
+const Modal = forwardRef(({ children, buttomCaption }, ref) => {
   const dialog = useRef();
   useImperativeHandle(ref, () => {
     return {
@@ -16,7 +16,7 @@ const Modal = forwardRef(({ children }, ref) => {
     createPortal(<dialog ref={dialog}>
       {children}
       <form method='dialog'>
-        <button>Close</button>
+        <button>{ buttomCaption}</button>
       </form>
     </dialog>,
       document.getElementById('modal-root'))

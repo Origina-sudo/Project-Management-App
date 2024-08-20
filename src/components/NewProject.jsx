@@ -32,7 +32,7 @@ onAdd({
 
   return (
     <>
-      <Modal ref={modal}> 
+      <Modal ref={modal} buttonCaption='Okay'> 
         <h2>Invalid Input</h2>
         <p>Ooops.. looks like you forgot to enter a value.</p>
         <p>Please make sure you provide a valid value for every input field.</p>
