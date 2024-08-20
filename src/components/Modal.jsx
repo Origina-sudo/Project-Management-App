@@ -5,9 +5,9 @@ const Modal = ({children}) => {
   return (
   createPortal(  <dialog>
         {children}
-    </dialog>)
+    </dialog>, document.getElementById('modal-root'))
   )
-}
+} 
 ///
 
 export default Modal
