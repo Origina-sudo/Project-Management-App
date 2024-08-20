@@ -1,16 +1,19 @@
-import React from 'react'
+import React from "react";
 
 const SelectedProjects = () => {
   return (
-      <div>
-          <header>
-              <h1>TITLE</h1>
-              <button>Delete</button>
-          </header>
-            Task
-
+    <div>
+      <header>
+        <div>
+          <h1>TITLE</h1>
+          <button>Delete</button>
+              </div>
+              <p>DATE</p>
+              <p>DESCRIPTION</p>
+      </header>
+      Task
     </div>
-  )
-}
+  );
+};
 
-export default SelectedProjects
+export default SelectedProjects;
