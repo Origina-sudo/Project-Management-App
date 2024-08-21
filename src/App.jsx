@@ -12,13 +12,21 @@ const [projectstate, setProjectstate] = useState({
 function handleStartAddProject(){
       setProjectstate(prevSate => {  
        return{
-        selectedProjectId: null,
         ...prevSate,
         selectedProjectId : null,
        }
       });
 }
   
+  function handleSelectProject(id) {
+    setProjectstate(prevSate => {  
+      return {
+        ...prevSate,
+       selectedProjectId : id,
+      }
+     });
+
+}
   
   function handleCancelAddProject() {
     setProjectstate(prevSate => {  
@@ -58,6 +66,7 @@ function handleAddProject(projectData){
   return (
     <main className="h-screen my-8 flex gap-8">
       <ProjectSideBar 
+       onSelectProject={handleStartAddProject}
       onStartAddProject={handleStartAddProject}
        projects={projectstate.projects}/>
       {content}
