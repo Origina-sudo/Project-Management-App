@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useState } from 'react'
 
-const Newtask = () => {
+const Newtask = ({onAdd}) => {
     const [enteredTask, setEnteredTask] = useState()
     
     function handleChange(event) {
@@ -9,6 +9,7 @@ const Newtask = () => {
     }
 
     function handleClick() {
+        onAdd(enteredTask);
         setEnteredTask("");
     }
 
