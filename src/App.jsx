@@ -33,9 +33,7 @@ function App() {
     setProjectstate((prevSate) => {
       return {
         ...prevSate,
-        selectedProjectId: undefined,
-        tasks: prevSate.tasks.filter((task) =>
-          task.id !== id )
+        tasks: prevSate.tasks.filter((task) => task.id !== id),
       };
     });
   }
