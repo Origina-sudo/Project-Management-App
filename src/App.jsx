@@ -15,7 +15,8 @@ function App() {
     setProjectstate((prevSate) => {
       return {
         ...prevSate,
-        selectedProjectId: null,
+        selectedProjectId: undefined,
+        projects: prevSate.projects.filter((project)=>  project.id !== prevSate.selectedProjectId)
       };
     });
   }
