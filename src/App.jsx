@@ -10,6 +10,16 @@ function App() {
     projects: [],
   });
 
+
+  function handleDeleteProject() {
+    setProjectstate((prevSate) => {
+      return {
+        ...prevSate,
+        selectedProjectId: null,
+      };
+    });
+  }
+
   function handleStartAddProject() {
     setProjectstate((prevSate) => {
       return {
