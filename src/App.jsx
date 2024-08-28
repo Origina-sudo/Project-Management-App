@@ -29,8 +29,15 @@ function App() {
   
 
 
-  function handleDeleteTask(task) {
-
+  function handleDeleteTask(id) {
+    setProjectstate((prevSate) => {
+      return {
+        ...prevSate,
+        selectedProjectId: undefined,
+        tasks: prevSate.tasks.filter((task) =>
+          task.id !== id )
+      };
+    });
   }
 
 
