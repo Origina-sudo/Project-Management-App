@@ -12,11 +12,11 @@ const Task = ({ tasks, onAdd, onDelete }) => {
         </p>
       )}
       {tasks.leght > 0 && (
-        <ul>
+        <ul className="p-4 mt-8 rounded-md bg-stone-100">
           {tasks.map((task) => (
-            <li key={task.id}>
+            <li className="flex justify-between my-4" key={task.id}>
               <span>{task.text}</span>
-              <button>Clear</button>
+              <button className="text-stone-700 hover:text-red-500">Clear</button>
             </li>
           ))}
         </ul>
