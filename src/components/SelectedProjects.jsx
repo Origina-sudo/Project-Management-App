@@ -2,11 +2,11 @@ import React from "react";
 
 const SelectedProjects = ({ project }) => {
     
-    const formattedDate = new Date(project.dueDate).toLocaleDateString('en-US', {
-        year: "numeric",
-        month :"short",
-        day: "numeric"
-    })
+  const formattedDate = new Date(project.dueDate).toLocaleDateString('en-US', {
+    year: "numeric",
+    month: "short",
+    day: "numeric"
+  });
   return (
     <div className="w-[35rem] mt-16">
       <header className="pd-4 md-4 border-b-2 border-stone-300">
