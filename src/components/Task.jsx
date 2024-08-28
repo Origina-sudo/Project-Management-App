@@ -5,13 +5,12 @@ const Task = ({ tasks, onAdd, onDelete }) => {
     <section>
       <h2 className="text-2xl font-bold text-stone-700 mb-4">Tasks</h2>
       <Newtask onAdd={onAdd} />
-      {/* Will render only conditionally */}
-      {tasks.lenght === 0 && (
+      {tasks.length === 0 && (
         <p className="text-stone-800 my-4">
           This Project does not have any tasks yet.
         </p>
       )}
-      {tasks.leght > 0 && (
+      {tasks.length > 0 && (
         <ul className="p-4 mt-8 rounded-md bg-stone-100">
           {tasks.map((task) => (
             <li className="flex justify-between my-4" key={task.id}>
