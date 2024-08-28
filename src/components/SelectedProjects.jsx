@@ -1,4 +1,5 @@
 import React from "react";
+import Task from "./Task";
 
 const SelectedProjects = ({ project, onDelete }) => {
     
@@ -20,7 +21,7 @@ const SelectedProjects = ({ project, onDelete }) => {
               <p className="text-stone-600 whitespace-pre-wrap">
                   {project.description}</p>
       </header>
-      Task
+      <Task/>
     </div>
   );
 };
