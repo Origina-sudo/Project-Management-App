@@ -65,7 +65,8 @@ To get a local copy up and running, follow these steps.
    ```sh
    npm start or npm run dev
 
-Acknowledgments
+Acknowledgments:
+
 React Documentation: For the amazing documentation that helped guide the development process.
 
 Tailwind CSS Community: For the fantastic tools and resources.
