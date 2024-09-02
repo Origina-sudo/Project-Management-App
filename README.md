@@ -49,3 +49,22 @@ To get a local copy up and running, follow these steps.
 
    ```sh
    git clone https://github.com/Origina-sudo/Project-Management-App.git
+   
+1. Navigate to the project directory:
+
+   ```sh
+   cd Project-Management-App
+
+1. Install dependencies:
+
+   ```sh
+   npm install
+
+1. Start the development server:
+
+   ```sh
+   npm start or npm run dev
+
+Acknowledgments
+React Documentation: For the amazing documentation that helped guide the development process.
+Tailwind CSS Community: For the fantastic tools and resources.
