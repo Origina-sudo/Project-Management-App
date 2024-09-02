@@ -1,49 +1,69 @@
 Project Management App
 Welcome to the Project Management App, a single-page application built with React and styled using Tailwind CSS. This app is designed to help users manage projects efficiently with an intuitive and responsive user interface.
 
-📸 Demo
-https://github.com/Origina-sudo/Project-Management-App/blob/main/src/assets/Screenshot%202024-09-02%20135142.png
+Table of Contents
+Demo
+Features
+Technologies Used
+Getting Started
+Installation
+Usage
+License
+Acknowledgments
+Demo
 
-https://github.com/Origina-sudo/Project-Management-App/blob/main/src/assets/Screenshot%202024-09-02%20134205.png
 
-https://github.com/Origina-sudo/Project-Management-App/blob/main/src/assets/Screenshot%202024-09-02%20134148.png
-
-https://github.com/Origina-sudo/Project-Management-App/blob/main/src/assets/Screenshot%202024-09-02%20134100.png
-
-
-🚀 Features
+Features
 Single Page Application: Seamlessly navigate through the app without reloading the page.
 Responsive Design: Optimized for all devices, from desktops to mobile phones.
 Task Management: Easily add, edit, and delete tasks associated with projects.
 User-Friendly Interface: Simple and clean UI powered by Tailwind CSS.
-
-🛠️ Built With
-React: A powerful JavaScript library for building user interfaces.
-Tailwind CSS: A utility-first CSS framework for rapidly building custom designs.
+Technologies Used
+React: JavaScript library for building user interfaces.
+Tailwind CSS: Utility-first CSS framework for styling.
 JavaScript (JS): Core functionality and interactivity.
-CSS: Additional styling to complement Tailwind CSS
+CSS: Additional styling to complement Tailwind CSS.
+Getting Started
+To get a local copy up and running, follow these steps.
 
-💻 Getting Started
 Prerequisites
-Ensure you have Node.js installed on your system.
-
+Node.js installed on your machine
+npm (Node Package Manager)
 Installation
+Clone the repository:
 
-Clone the repository: https://github.com/Origina-sudo/Project-Management-App.git
+sh
+Copy code
+git clone https://github.com/Origina-sudo/Project-Management-App.git
+Navigate to the project directory:
 
-Navigate to the project directory: cd Project_Management-App
+sh
+Copy code
+cd Project-Management-App
+Install dependencies:
 
-Install dependencies: npm install
+sh
+Copy code
+npm install
+Usage
+Start the development server:
 
-Start the development server: npm run dev or npm start
+sh
+Copy code
+npm start or npm run dev
+Open http://localhost:3000 to view it in the browser.
 
-Open your browser and visit: http://localhost:3000
+Building for Production
+To create a production build, run:
 
+sh
+Copy code
+npm run build
+This will create a build folder with the production build of your app.
 
-📝 License
+License
 This project is open source and available under the MIT License.
 
-🙏 Acknowledgments
+Acknowledgments
 React Documentation: For the amazing documentation that helped guide the development process.
 Tailwind CSS Community: For the fantastic tools and resources.
-
